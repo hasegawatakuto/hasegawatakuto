@@ -32,8 +32,10 @@ public class DataTypeAndMemory {
 		int [] nums = {10,100,1000};
 		System.out.println(nums[1]);
 		//Q6
-	    nums[1] = 8;
+	    int[] b = nums;
+	    b[1] = 8;
 	    System.out.println(nums[1]);
+	    System.out.println(b[1]);
 	    
 	}
 
