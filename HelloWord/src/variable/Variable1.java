@@ -17,7 +17,7 @@ public class Variable1 {
 		System.out.println("私の自己紹介をします。");
 		String name = "山田太郎";
 		System.out.println("名前は" + name + "です。");
-		String trance ="男";
+		char trance ='男';
 		System.out.println("性別は" + trance + "です。");
 		int age = 19;
 		System.out.println("年齢は" + age + "歳です。");
