@@ -7,7 +7,7 @@ public class Bool {
 //		boolean型変数 result_1 をコンソールに出力して下さい。
 		int a = 20;
 		int b = 5;
-		boolean result_1 = a>b;
+		boolean result_1 = (a >= b);
 		System.out.println(result_1);
 		//trueになる
 
@@ -16,7 +16,7 @@ public class Bool {
 //		boolean型変数 result_2 をコンソールに出力して下さい。
 		int c = 5;
 		int d = 10;
-		boolean result_2 = c == d;
+		boolean result_2 = c != d;
 		System.out.println(result_2);
 		//falseになる
 		
