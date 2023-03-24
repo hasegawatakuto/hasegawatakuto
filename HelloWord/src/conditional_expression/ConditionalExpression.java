@@ -51,7 +51,7 @@ public class ConditionalExpression {
 //		※④は System.out.println() のカッコ内に条件演算子（三項演算子）を使って、一行で書いてください。
 //		④もし変数 isTired が 0 であれば、変数 study を利用して「カリキュラムを続けます。」と表示する。
 		//1
-	    int isTired = 1;
+	    int isTired = 0;
 	    //2
 		String study = "カリキュラム";
 		//3
