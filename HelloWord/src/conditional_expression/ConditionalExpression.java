@@ -55,12 +55,9 @@ public class ConditionalExpression {
 	    //2
 		String study = "カリキュラム";
 		//3
-		if (isTired == 0)  {
-			System.out.println("私はとても元気です。");
+		System.out.println(isTired == 0 ? "私はとても元気です。" : "私は疲れています。");
+		//4
+		if (isTired == 0)  {System.out.println(study+ "を続けます。" );
 		}
-		else {
-			System.out.println("私は疲れています。");
-		}
-		System.out.println(isTired == 0 ? study + "を続けます。" : "私は疲れています。");
 	}	
 }
