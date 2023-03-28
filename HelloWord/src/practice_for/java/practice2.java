@@ -12,15 +12,13 @@ package practice_for.java;
 public class practice2 {
 
 	public static void main(String[] args) {
-	//配列に1~9を格納
-		int num[] = {1,2,3,4,5,6,7,8,9};
-	//九九のループ式
-		for (int i = 0; i < num.length; i++){
-		     for (int j = 0; j < num.length; j++){
-					//掛け算式
-		            int kuku =num[i] * num[j];
-		               System.out.println(num[i] + "×" + num[j] + "=" + kuku);
-		     }
+		for (int i = 1; i <= 9; i++) {   
+		    for (int j = 1; j <= 9; j++) {   
+		        System.out.print(i + "×" + j + "=" + i*j + " ");   
+		    }
+		    System.out.println();    
 		}
+		     
+		
 	}
 }
