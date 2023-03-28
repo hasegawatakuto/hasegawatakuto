@@ -18,9 +18,8 @@ public class sample {
 
 	public static void main(String[] args) {
 		
-       /*変数に数値を代入とは1つなのか複数もしくはランダムなのかわからなかったので一応コードが正常に動くのかを確認するため
-        FOR文を使うことにします。*/
-        for (int month = 1; month <13; month++)
+     
+        int month = 2;
         
         switch (month) {
             case 2:
