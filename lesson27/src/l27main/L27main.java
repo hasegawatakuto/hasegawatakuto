@@ -44,11 +44,16 @@ import l27logic.L27logic;
 public class L27main{
 
 	public static void main(String[] args) {
+		//scanner文を利用しコンソールに入力させるように指定。
 		Scanner sc = new Scanner(System.in);
 		System.out.println("コンソールを入力してください");
+		//nextLineを用いて一行を読み込む。
 		String input = sc.nextLine();
+		//インスタンスl27logicを作成しl27logicの引数を入れる。
 		L27logic l27logic = new L27logic(input, 0, 0, input);
+		//先ほど定義したinputをprocessの引数に入れprocessに書かれた処理を行わせる。
 		l27logic.process(input);
+		
 		}
 		
 	}
