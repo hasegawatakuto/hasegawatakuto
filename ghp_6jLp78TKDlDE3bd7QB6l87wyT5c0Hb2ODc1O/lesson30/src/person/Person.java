@@ -1,8 +1,11 @@
 package person;
 
+import bicycle.Bicycle;
+import car.Car;
+
 public class Person{
 	static int count = 0;
-	String name;
+	public String name;
 	int age;
 	double height;
 	double weight;
@@ -25,6 +28,14 @@ public class Person{
 	}
 	public static void printCount(){
 		System.out.println("合計" + Person.count + "人です");
+		}
+	public void buy(Car car) {
+		car.setOwner(this.name);
+		System.out.println(car.getOwner() + "が購入しました");
+	}
+	public void buy(Bicycle bicycle) {
+		bicycle.setOwner(this.name);
+		System.out.println(bicycle.getOwner() + "が購入しました");
 		}
 	//BMI = 体重/身長*身長
 	}

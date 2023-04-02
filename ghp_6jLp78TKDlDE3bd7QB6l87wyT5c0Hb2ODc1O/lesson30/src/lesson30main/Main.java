@@ -1,5 +1,7 @@
 package lesson30main;
 
+import bicycle.Bicycle;
+import car.Car;
 import person.Person;
 class Main {
 	  public static void main(String[] args) {
@@ -9,5 +11,14 @@ class Main {
 	    person2.print();
 	    
 	    Person.printCount();
+	    Car car = new Car();
+	    Bicycle bicycle = new Bicycle();
+	    
+	    car.setOwner(person1.name);
+	    bicycle.setOwner(person2.name);
+	    System.out.println(car.getOwner());   System.out.println(bicycle.getOwner());
+	    person1.buy(car);
+	    person2.buy(bicycle);
 	  }
-	}
+	  }
+	
