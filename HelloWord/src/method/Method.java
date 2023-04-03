@@ -22,25 +22,25 @@ public class Method {
 		public static int[] ran (int count) {
 				int[] result3 = new int[count];
 				Random rd = new Random();
-				for (int i =0; i < count; i++) {
-				result3[i] =rd.nextInt(100)+1;
+				for (int i = 0; i < count; i++){
+				result3[i] =rd.nextInt(99)+1;
 				}
 			return result3;
 	}
 		// Q6：Q5で作成した関数を用いて、このメソッド（関数）の引数をQ5のメソッド（関数）の引数に渡して
 		//     配列の要素の平均値を返すメソッド（関数）を作成してください。
 		public static double ran2 (int count) {
-			int sum = 0;
-			int[] result4 = ran(count);
-			//ここまでで引用している。
-			for(int i =0; result4.length > i; i++) {
-				sum += result4[i];
-			}
-			double ave = sum / result4.length; 
-			return ave;
+			int[] result3 = ran(count);
+	        int sum = 0;
+	        for (int i = 0; i < count; i++) {
+	        	System.out.println(result3[i]);
+	            sum += result3[i];
+	        }
+	        return (double) sum / count;
 		}
 		
 	public static void main(String[] args) {
+		hello();
 	//Q2
 		int result = addOne(2);
 		  System.out.println(result);
@@ -49,14 +49,13 @@ public class Method {
 		int result1 = multiply(5, 2);
 	    System.out.println(result1);
     //Q4   
-	    int result2 = multiply(8, 7);
+	    double result2 = multiply(8.5, 7.5);
 	    System.out.println(result2);
 	//Q5    
-	    int[] arr1 = ran(5);
-        for (int num : arr1) {
-            System.out.print(num + " ");
-        }
-        System.out.println();
+	    int[] result3 = ran(5);
+	    for (int i = 0; i < result3.length; i++) {
+            System.out.println(result3[i]);    
+        }System.out.println();
     //Q6
         double avg1 = ran2(5);
         System.out.println("平均値は " + avg1);
